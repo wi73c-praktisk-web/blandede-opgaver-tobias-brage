@@ -1,4 +1,4 @@
-# Fartbøde udregner
+# Fartbøde beregner
 
 [Live version](http://tobiasbrage.96.lt/boede/)
 
