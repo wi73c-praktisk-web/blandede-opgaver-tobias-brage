@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bøde udregner</title>
+    <link type="text/css" rel="stylesheet" href="main.css"> <!-- main css -->
+    <script type="text/javascript" src="jquery.js"></script> <!-- jquery -->
+    <script type="text/javascript" src="opgave-fartboede.js"></script> <!-- main javasript-->
+</head>
+
+<body>
+
+<div id="wrapper"> <!-- wrapper -->
+    <ul id="speedListContainer"> <!-- speed list container -->
+        <li class="speedListElement" id="fifty">
+            <img class="speedListImage" src="img/50area.png"> <!-- speed element 50 -->
+        </li>
+        <li class="speedListElement" id="eighty">
+                <img class="speedListImage" src="img/80area.png"> <!-- speed element 80 -->
+        </li>
+        <li class="speedListElement" id="hundredten">
+                <img class="speedListImage" src="img/110area.png"> <!-- speed element 110 -->
+        </li>
+        <li class="speedListElement" id="hundredthirty">
+                <img class="speedListImage" src="img/130area.png"> <!-- speed element 130 -->
+        </li>
+    </ul> <!-- /speed List Container -->
+
+    <div id="container"> <!-- container -->
+        <input id="curSpeed" type="number" placeholder="din fart eks. 80"> <!-- current speed input -->
+        <input id="submitSpeed" type="button" value="Submit"> <!-- submit -->
+    </div> <!-- /container -->
+
+    <div id="speedResult"></div> <!-- /result -->
+
+    <div id="chosenSpeed"></div> <!-- /chosen speed -->
+</div> <!-- /wrapper -->
+
+</body>
+
+</html>

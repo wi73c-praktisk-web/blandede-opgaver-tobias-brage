@@ -1,0 +1,91 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+#wrapper {
+    width: 1024px;
+    min-height: 100px;
+    margin: 20px auto 0 auto;
+}
+
+#speedListContainer {
+    width: 1024px;
+    min-height: 50px;
+    float: left;
+    list-style: none;
+}
+
+.speedListElement {
+    width: 233px;
+    height: auto;
+    float: left;
+    margin-left: 28px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #777777;
+    border-radius: 3px;
+}
+
+#eighty {
+    background-color: #859E4A;
+}
+
+.speedListImage {
+    width: 183px;
+    height: auto;
+    float: left;
+    padding: 25px;
+}
+
+.speedListElement:first-child {
+    margin: 0;
+}
+
+#chosenSpeed {
+    display: none;
+}
+
+#curSpeed {
+    width: 1002px;
+    height: 40px;
+    padding: 10px;
+    font-size: 24px;
+    border: 1px solid #777777;
+    border-radius: 3px;
+    margin: 20px 0 0 0;
+    outline: 0;
+    color:#555555;
+    text-align: center;
+}
+
+#submitSpeed {
+    width: 1024px;
+    min-height: 20px;
+    padding: 15px;
+    font-size: 24px;
+    border: 1px solid #777777;
+    border-radius: 3px;
+    margin: 20px 0 0 0;
+    outline: 0;
+    color:#ffffff;
+    display: block;
+    background-color: #859E4A;
+    cursor: pointer;
+}
+
+#speedResult {
+    width: 1024px;
+    min-height: 20px;
+    margin: 20px 0 0 0;
+    color: #555555;
+    font-size: 24px;
+    text-align: center;
+}
