@@ -13,13 +13,13 @@ function speedCal(speedLim = 80, speedCur = 80, roadwork = false) {
     speedPer = speedPer.toFixed(0);
 
     if(speedCur > speedLim && speedPer <= 30 && speedCur < 160) {
-        speedCon = 'Fartbøde på';
+        speedCon = 'Fartbøde';
     } else if(speedPer > 30 && speedPer <= 60 && speedCur < 160) {
-        speedCon = 'Fartbøde og klip i kortet samt bøde på';
+        speedCon = 'Klip i kortet samt bøde';
     } else if(speedPer > 60 && speedPer <= 100 && speedCur < 200 || speedCur >= 160 && speedCur < 200 && speedPer <= 100) {
-        speedCon = 'Betinget frakendelse af kørekortet og bøde på';
+        speedCon = 'Betinget frakendelse af kørekortet og bøde';
     } else if(speedCur >= 200 || speedPer >= 100) {
-        speedCon = 'Ubetinget frakendelse af kørekortet og bøde på';
+        speedCon = 'Ubetinget frakendelse af kørekortet og bøde';
     } else if(speedCur <= speedLim) {
         speedCon = 'Du kører som du må'; 
     }
@@ -29,9 +29,9 @@ function speedCal(speedLim = 80, speedCur = 80, roadwork = false) {
             speedMin = speedLim50[speedMinMaxInt][0];
             speedMax = speedLim50[speedMinMaxInt][1];
             if(speedCur >= speedMin && speedCur <= speedMax && roadwork == false) {
-                speedCon += ' ' + speedLim50[speedMinMaxInt][2];
+                speedCon += ' på ' + speedLim50[speedMinMaxInt][2];
             } else if(speedCur >= speedMin && speedCur <= speedMax && roadwork == true) {
-                speedCon += ' ' + speedLim50[speedMinMaxInt][2] * 2;
+                speedCon += ' på ' + speedLim50[speedMinMaxInt][2] * 2;
             }
             speedMinMaxInt++;
         });
@@ -42,9 +42,9 @@ function speedCal(speedLim = 80, speedCur = 80, roadwork = false) {
             speedMin = speedLim80[speedMinMaxInt][0];
             speedMax = speedLim80[speedMinMaxInt][1];
             if(speedCur >= speedMin && speedCur <= speedMax && roadwork == false) {
-                speedCon += ' ' + speedLim80[speedMinMaxInt][2];
+                speedCon += ' på ' + speedLim80[speedMinMaxInt][2];
             } else if(speedCur >= speedMin && speedCur <= speedMax && roadwork == true) {
-                speedCon += ' ' + speedLim80[speedMinMaxInt][2] * 2;
+                speedCon += ' på ' + speedLim80[speedMinMaxInt][2] * 2;
             }
             speedMinMaxInt++;
         });
@@ -55,9 +55,9 @@ function speedCal(speedLim = 80, speedCur = 80, roadwork = false) {
             speedMin = speedLim110[speedMinMaxInt][0];
             speedMax = speedLim110[speedMinMaxInt][1];
             if(speedCur >= speedMin && speedCur <= speedMax && roadwork == false) {
-                speedCon += ' ' + speedLim110[speedMinMaxInt][2];
+                speedCon += ' på ' + speedLim110[speedMinMaxInt][2];
             } else if(speedCur >= speedMin && speedCur <= speedMax && roadwork == true) {
-                speedCon += ' ' + speedLim110[speedMinMaxInt][2] * 2;
+                speedCon += ' på ' + speedLim110[speedMinMaxInt][2] * 2;
             }
             speedMinMaxInt++;
         });
@@ -68,9 +68,9 @@ function speedCal(speedLim = 80, speedCur = 80, roadwork = false) {
             speedMin = speedLim130[speedMinMaxInt][0];
             speedMax = speedLim130[speedMinMaxInt][1];
             if(speedCur >= speedMin && speedCur <= speedMax && roadwork == false) {
-                speedCon += ' ' + speedLim130[speedMinMaxInt][2];
+                speedCon += ' på ' + speedLim130[speedMinMaxInt][2];
             } else if(speedCur >= speedMin && speedCur <= speedMax && roadwork == true) {
-                speedCon += ' ' + speedLim130[speedMinMaxInt][2] * 2;
+                speedCon += ' på ' + speedLim130[speedMinMaxInt][2] * 2;
             }
             speedMinMaxInt++;
         });
@@ -79,4 +79,4 @@ function speedCal(speedLim = 80, speedCur = 80, roadwork = false) {
     console.log(speedCon);
 }
 
-speedCal(110,150,false);
+speedCal(110,2000,false);
