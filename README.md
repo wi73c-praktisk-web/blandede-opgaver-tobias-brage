@@ -1,1 +1,5 @@
-# blandede-opgaver-tobias-brage
+# Fartbøde udregner
+
+[Live version](http://tobiasbrage.96.lt/boede/)
+
+Ustabil gratis server.
